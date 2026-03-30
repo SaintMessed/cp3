@@ -2,15 +2,8 @@
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,18 +15,38 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnGenerate = new Button();
+            listBox1 = new ListBox();
+            SuspendLayout();
+            
+            btnGenerate.Location = new Point(12, 12);
+            btnGenerate.Name = "btnGenerate";
+            btnGenerate.Size = new Size(250, 40);
+            btnGenerate.TabIndex = 0;
+            btnGenerate.Text = "Сгенерировать пользователей";
+            btnGenerate.UseVisualStyleBackColor = true;
+            btnGenerate.Click += btnGenerate_Click;
+
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(12, 70);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(400, 199);
+            listBox1.TabIndex = 1;
+
+            ClientSize = new Size(1363, 736);
+            Controls.Add(listBox1);
+            Controls.Add(btnGenerate);
+            Name = "Form1";
+            Text = "Faker Users App";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
