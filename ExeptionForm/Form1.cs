@@ -4,8 +4,21 @@ using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Windows.Forms;
 
-namespace ExeptionForm
+
+namespace ExceptionForm
 {
+        public class User
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public string Email { get; set; }
+            public int Age { get; set; }
+        }
+     public class AgeRestrictionException : Exception
+    {
+        public AgeRestrictionException(string message) : base(message) { }
+    }
+    
     public partial class Form1 : Form
     {
         public Form1()
@@ -50,7 +63,6 @@ namespace ExeptionForm
                 }
             }
         }
-
         private void InsertUser(User user, SqliteConnection connection)
         {
             if (user.Age < 14)

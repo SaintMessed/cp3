@@ -1,4 +1,4 @@
-﻿namespace ExeptionForm
+﻿namespace ExceptionForm
 {
     public class User
     {

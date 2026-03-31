@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExeptionForm
+namespace ExceptionForm
 {
     public class AgeRestrictionException : Exception
     {

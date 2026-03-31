@@ -1,3 +1,5 @@
+using ExceptionForm;
+
 namespace ExeptionForm
 {
     internal static class Program

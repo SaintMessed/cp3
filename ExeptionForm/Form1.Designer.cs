@@ -1,4 +1,4 @@
-﻿namespace ExeptionForm
+﻿namespace ExceptionForm
 {
     partial class Form1
     {
